@@ -1,37 +1,62 @@
-Welcome to Glitch
-=================
+# Javascript30 Tutorial Codepattern Function
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+* Wes Bos Youtube Tutorial: [JavaScript KONAMI CODE! #JavaScript30 12/30](https://www.youtube.com/watch?v=_A5eVOIqGLU).
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+*** Note: to open web links in a new window use: _ctrl+click on link_**
 
-Find out more [about Glitch](https://glitch.com/about).
+## Table of contents
 
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Features](#features)
+* [Status](#status)
+* [Inspiration](#inspiration)
+* [Contact](#contact)
 
-Your Project
-------------
+## General info
 
-### ← README.md
+* Uses javascript to detect a sequence of keys. A function is run to show a unicorn if the sequence is detected.
 
-That's this file, where you can tell people what your cool website does and how you built it.
+## Screenshots
 
-### ← index.html
+![Example screenshot](./img/pattern.png).
 
-Where you'll write the content of your website. 
+## Technologies
 
-### ← style.css
+* [Javascript v1.9 ECMA-262 ECMAScript 2018](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
 
-CSS files add styling rules to your content.
+## Setup
 
-### ← script.js
+* Open index.html in browser. If any code is changed the browser needs to be refreshed.
 
-If you're feeling fancy you can add interactivity to your site with JavaScript.
+## Code Examples
 
-### ← assets
+* Code to check a sequence of keys is the same as a defined string constant.
 
-Drag in `assets`, like images or music, to add them to your project
+```javascript
+  // join letters to make a string then check if it is the same as the secret code
+  if (pressed.join('').includes(secretCode)) {
+    console.log('Ding Dong!');
+    cornify_add();
+  }
+```
 
-Made by [Glitch](https://glitch.com/)
--------------------
+## Features
 
-\ ゜o゜)ノ
+* A unicorn is shown if the sequence is typed correctly.
+
+## Status & To-Do List
+
+* Status: Working. Updated to work from browser, not from Glitch.
+
+* To-Do: Nothing. Could use a response header to avoid the warning from the unicorn site but not urgent.
+
+## Inspiration
+
+* Wes Bos Youtube Tutorial: [JavaScript KONAMI CODE! #JavaScript30 12/30](https://www.youtube.com/watch?v=_A5eVOIqGLU)
+
+## Contact
+
+Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
